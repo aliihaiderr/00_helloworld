@@ -1,9 +1,10 @@
+import Link from "next/link";
 export default function address(){
-    return (
-      <>
-      <h1>Address Info</h1>
-      <p>Im from Sahiwal,Punjab,Pakistan</p>
-      </>
+  return (
+    <>
+    <h1>Address</h1>
+    <p>Im From sahiwal,punjab,pakistan</p>
+    <Link href="/">home</Link>
+    </>
     );
-    
 }
