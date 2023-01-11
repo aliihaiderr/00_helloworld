@@ -4,9 +4,8 @@ import Link from 'next/link';
 export default function Page() {
   return (
   <>
-  <h1>Hello!....Im using next.js linking</h1>
-  <Link href="/name">Name</Link><br/>
-  <Link href="/name/address">Address</Link>
+  <h1>Welcome to Home Screen!....Im using next.js linking</h1>
+  <Link href="/name" replace>Name</Link><br/>
   </>
   );
 }

@@ -1,12 +1,15 @@
-import Link from "next/link";
+'use client';
+import { useRouter } from "next/navigation";
 
-export default function name(){
+export default function Name(){
+  const router = useRouter();
 
     return (
       <>
       <h1>My Name is Ali Haider</h1>
       <h3>PIAIC-139654</h3>
-      <Link href="/">home</Link>
+      <button type="button" onClick={()=>router.push('/name/address')}>Address</button><br/>
+      <button type="button" onClick={()=>router.push('/')}>Home</button>
       </>
       );
 }
